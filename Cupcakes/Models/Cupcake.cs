@@ -16,7 +16,7 @@ namespace Cupcakes.Models
         [Display(Name = "**Description:**")]
         public string Description { get; set; }
 
-        [Display(Name = "**Gluten Free:**")]
+        [Display(Name = "Gluten Free:")]
         public bool GlutenFree { get; set; }
 
         [Range(1,15)]
@@ -39,6 +39,9 @@ namespace Cupcakes.Models
         public int? BakeryId { get; set; }
 
         public Bakery Bakery { get; set; }
+
+        [Display(Name = "Caloric Value:")]
+        public int CaloricValue { get; set; }
 
     }
 }
